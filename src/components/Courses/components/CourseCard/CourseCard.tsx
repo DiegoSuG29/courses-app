@@ -1,6 +1,8 @@
 import React from "react";
+
 import styles from "./CourseCard.module.css"
 import Button from "../../../../common/Button/Button.tsx"
+
 
 export default function CourseCard(props: any) {
     return (
