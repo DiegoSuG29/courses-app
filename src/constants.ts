@@ -1,5 +1,4 @@
-export const mockedCoursesList = [
-    {
+export const mockedCoursesList = [{
         id: 'de5aaa59-90f5-4dbc-b8a9-aaf205c551ba',
         title: 'JavaScript',
         description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 

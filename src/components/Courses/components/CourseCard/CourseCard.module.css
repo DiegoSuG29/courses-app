@@ -28,6 +28,12 @@
     flex-flow: column nowrap;
 }
 
+.InfoColumn text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .InfoColumn button {
     max-width: 40%;
 }
