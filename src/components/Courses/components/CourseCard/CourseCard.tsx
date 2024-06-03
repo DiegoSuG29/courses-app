@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./CourseCard.module.css";
+
 import Button from "../../../../common/Button/Button";
 
 interface cardProps {
@@ -9,9 +10,10 @@ interface cardProps {
     duration: string,
     authors: Array<String>,
     date: string,
+    routingFunction: Function,
 };
 
-function formatAuthors(authorList: Array<String>): String {
+export function formatAuthors(authorList: Array<String>): String {
     let str = "";
     for (let i = 0; i < authorList.length - 1; i++) {
         str += authorList[i] + ", ";
@@ -29,11 +31,11 @@ export default function CourseCard(props: cardProps) {
                 <div>{props.description}</div>
                 <div>
                     <div className={styles.InfoColumn}>
-                        <text><span className={styles.boldedText}>Author</span>: {formatAuthors(props.authors)}</text>
-                        <text><span className={styles.boldedText}>Duration</span>: {props.duration}</text>
-                        <text><span className={styles.boldedText}>Created</span>: {props.date}</text>
+                        <span><span className={styles.boldedText}>Author</span>: {formatAuthors(props.authors)}</span>
+                        <span><span className={styles.boldedText}>Duration</span>: {props.duration}</span>
+                        <span><span className={styles.boldedText}>Created</span>: {props.date}</span>
                         <br />
-                        <Button buttonText={"Show course"} onClickFunction={() => { }}></Button>
+                        <Button buttonText={"Show course"} onClickFunction={props.routingFunction}></Button>
                     </div>
                 </div>
             </div>

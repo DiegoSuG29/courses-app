@@ -1,0 +1,14 @@
+.CoursesContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.TopBar {
+    display:flex;
+    flex-flow: row nowrap;
+    min-width: 85%;
+    margin: 0rem 5rem;
+    justify-content: space-between;
+}

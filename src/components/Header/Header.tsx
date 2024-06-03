@@ -8,7 +8,7 @@ export default function Header() {
         <div className={styles.Header}>
             <Logo/>
             <h2>Courses App</h2>
-            <Button buttonText="Logout" onClick={()=>{}}/>
+            <Button buttonText="Logout"/>
         </div>
     );
 }
