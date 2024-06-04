@@ -1,13 +1,21 @@
-import React from "react";
+import React from 'react';
 
 import styles from './SearchBar.module.css';
 
 import Button from "../../../../common/Button/Button";
+import Input from "../../../../common/Input/Input";
 
-export default function SearchBar() {
+interface SearchBarProps {
+    searchQuery: string,
+    onChange?: any,
+    onClick: () => void,
+}
+
+export default function SearchBar(props: SearchBarProps) {
+
     return (<div className={styles.Container}>
-        <div className={styles.SearchBar}>Place your text here.</div>
-        <Button buttonText="Search"/>
+        <Input name="searchbar" type="search" inputText="Enter you search here." className={styles.SearchBar} onChange={props.onChange} value={props.searchQuery} />
+        <Button buttonText="Search" onClickFunction={props.onClick} />
     </div>
     );
 }

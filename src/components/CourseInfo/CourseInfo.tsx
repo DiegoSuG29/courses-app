@@ -11,8 +11,8 @@ export default function CourseInfo() {
     const navigate = useNavigate();
     const location = useLocation();
     const data = location.state;
-    return (<div className={styles.CourseInfoContainer}>
-        <div>
+    return (<div>
+        <div className={styles.CourseInfoContainer}>
             <div className={styles.CourseInfoTitle}>{data.title}</div>
             <div className={styles.CourseCard}>
                 <div className={styles.CourseCardInfo}>

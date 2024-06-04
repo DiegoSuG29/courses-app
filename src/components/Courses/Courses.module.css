@@ -3,10 +3,11 @@
     flex-flow: column nowrap;
     align-items: center;
     margin-top: 50px;
+    min-height: 69vh;
 }
 
 .TopBar {
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     min-width: 85%;
     margin: 0rem 5rem;
