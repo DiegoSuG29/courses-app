@@ -7,11 +7,11 @@ import EmptyCourseList from '../EmptyCourseList/EmptyCourseList';
 import SearchBar from "./components/SearchBar/SearchBar";
 import Button from "../../common/Button/Button";
 
-import styles from './Courses.module.css';
-
 import formatCreationDate from '../../helpers/formatCreationDate';
 import getCourseDuration from '../../helpers/getCourseDuration';
 import getAuthors from '../../helpers/getAuthors';
+
+import styles from './Courses.module.css';
 
 export interface mockedCourse {
     id: string,
