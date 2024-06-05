@@ -49,7 +49,7 @@ export default function Courses(props: coursesProps) {
     const clickChange = () => {
         const results = coursesList.filter(course => {
             let titleSearch = course.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            course.id.toLowerCase().includes(searchQuery.toLowerCase());
+                course.id.toLowerCase().includes(searchQuery.toLowerCase());
             return titleSearch;
         })
         setResults(results);
