@@ -1,11 +1,10 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
-import styles from './CourseInfo.module.css';
-
 import Button from "../../common/Button/Button";
 import { formatAuthors } from "../Courses/components/CourseCard/CourseCard";
 
+import styles from './CourseInfo.module.css';
 
 export default function CourseInfo() {
     const navigate = useNavigate();

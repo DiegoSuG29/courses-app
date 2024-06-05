@@ -1,8 +1,8 @@
 import React from "react";
 
-import styles from "./CourseCard.module.css";
-
 import Button from "../../../../common/Button/Button";
+
+import styles from "./CourseCard.module.css";
 
 interface cardProps {
     title: string,

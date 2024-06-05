@@ -1,9 +1,9 @@
 import React from 'react';
 
-import styles from './SearchBar.module.css';
-
 import Button from "../../../../common/Button/Button";
 import Input from "../../../../common/Input/Input";
+
+import styles from './SearchBar.module.css';
 
 interface SearchBarProps {
     searchQuery: string,
